@@ -28,4 +28,14 @@ def elements_count(arr):
 #print(elements_count([1, 23, 3, 4, 3, 4, 1123, 2, 3]))
 
 
+def find_biggest_number(arr):
+    """
+    :param arr: array of number
+    :return: biggest number in array
+    """
+    if len(arr) == 2:
+        return arr[0] if arr[0] > arr[1] else arr[1]
+    sub_max = find_biggest_number(arr[1:])
+    return arr[0] if arr[0] > sub_max else sub_max
 
+print(find_biggest_number([1, 2, 12, 31, 2]))
