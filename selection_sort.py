@@ -1,6 +1,7 @@
 # Selection Sort
 
 # Sample: sort by ascending numbers
+# Complexity: 0(n^2)
 
 def find_smallest(arr):
     """
@@ -11,7 +12,7 @@ def find_smallest(arr):
     smallest_num_index = 0
     for i in range(len(arr)):
         if arr[i] < smallest_num:
-            smallest_num - arr[i]
+            smallest_num = arr[i]
             smallest_num_index = i
     return smallest_num_index
 

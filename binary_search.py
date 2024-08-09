@@ -1,4 +1,5 @@
 # Binary Search
+# Complexity: 0(log N)
 
 def binary_search(array, value):
     """
